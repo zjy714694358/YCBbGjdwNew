@@ -21,17 +21,21 @@
         android:theme="@style/Theme.YCBbGjdwNew2"
         tools:targetApi="31">
         <activity
+            android:name=".activity.XiafaShiyanJiChuInfoEndActivity"
+            android:exported="false"
+            android:screenOrientation="landscape" />
+        <activity
             android:name=".activity.XiafaShiyanJichuInfoActivity"
             android:exported="false"
-            android:screenOrientation="landscape"/>
+            android:screenOrientation="landscape" />
         <activity
             android:name=".activity.GetDangqianShujuActivity"
             android:exported="false"
-            android:screenOrientation="landscape"/>
+            android:screenOrientation="landscape" />
         <activity
             android:name=".activity.GetLishiShujuActivity"
             android:exported="false"
-            android:screenOrientation="landscape"/>
+            android:screenOrientation="landscape" />
         <activity
             android:name=".activity.GetDataAndUpLoadActivity"
             android:exported="false"

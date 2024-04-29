@@ -70,6 +70,16 @@
     <string name="tqwu" translatable="false">雾</string>
     <string name="tqleiyu" translatable="false">雷雨</string>
     <string name="tqduoyun" translatable="false">多云</string>
+    <string name="shiyanyiqileixing" translatable="false">试验仪器类型：</string>
+    <string name="yiqichangjia" translatable="false">仪器厂家：</string>
+    <string name="yiqixinghao" translatable="false">仪器型号：</string>
+    <string name="yiqichuchangbianhao" translatable="false">仪器出厂编号：</string>
+    <string name="guifanbanbenhao" translatable="false">规范版本号：</string>
+    <string name="wendu" translatable="false">温度：</string>
+    <string name="shidu" translatable="false">湿度：</string>
+    <string name="jingdu" translatable="false">经度：</string>
+    <string name="weidu" translatable="false">纬度：</string>
+    <string name="haiba" translatable="false">海拔：</string>
     <!--***********************************仪器类型*******************************************-->
     <string name="zhiliudianzucsy" translatable="false">直流电阻测试仪</string>
     <string name="dianyabicsy" translatable="false">电压比测试仪</string>

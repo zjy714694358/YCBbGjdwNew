@@ -2,6 +2,7 @@ package com.yc.ycbbgjdwnew.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.Bundle;
@@ -261,7 +262,7 @@ public class XiafaShiyanJichuInfoActivity extends AppCompatActivity implements V
 //                                String yqcjUnicodeStr = gbkToUnicode.getUnicode16(yqcjStr);
 
                                 String yqxhStr = HexUtils.hexToASCII(yiqixinghao);
-                                String yqccbbStr = HexUtils.hexToASCII(yiqichuchangbianhao);
+                                String yqccbhStr = HexUtils.hexToASCII(yiqichuchangbianhao);
                                 String gfbbh1 = ShiOrShiliu.parseInt(guifanbanbenhao1)+"";
                                 String gfbbh2 = ShiOrShiliu.parseInt(guifanbanbenhao2)+"";
                                 String gfbbh3 = ShiOrShiliu.parseInt(guifanbanbenhao3)+"";
@@ -287,10 +288,25 @@ public class XiafaShiyanJichuInfoActivity extends AppCompatActivity implements V
                                 if(StringUtils.isEquals("FFFFFFFF",haiba)!=true){
                                     haibaStr = ShiOrShiliu.hexToFloatSi(haiba);
                                 }
-                                String allStr = "仪器类型："+yqlxStr+",仪器厂家："+yqcjStr+",仪器型号："+yqxhStr+",仪器出厂编号："+yqccbbStr+"，规范版本号："+gfbbhAllStr
+                                String allStr = "仪器类型："+yqlxStr+",仪器厂家："+yqcjStr+",仪器型号："+yqxhStr+",仪器出厂编号："+yqccbhStr+"，规范版本号："+gfbbhAllStr
                                         +",温度："+wenduStr+"℃,湿度："+shiduInt+"%,经度："+jingduStr+",纬度："+weiduStr+",海拔："+haibaStr+"m";
                                 Log.e(TAG,allStr);
                                 fasong(CrcUtil.fasong("4245471000000004000000000001"),"");
+                                Intent intent = new Intent(XiafaShiyanJichuInfoActivity.this,XiafaShiyanJiChuInfoEndActivity.class);
+                                intent.putExtra("yqlx",yqlxStr);
+                                intent.putExtra("yqcj",yqcjStr);
+                                intent.putExtra("yqxh",yqxhStr);
+                                intent.putExtra("yqccbh",yqccbhStr);
+                                intent.putExtra("gfbbh",gfbbhAllStr);
+                                intent.putExtra("wendu",wenduStr);
+                                intent.putExtra("shidu",shiduInt);
+                                intent.putExtra("jingdu",jingduStr);
+                                intent.putExtra("weidu",weiduStr);
+                                intent.putExtra("haiba",haibaStr);
+                                finish();
+                                startActivity(intent);
+
+                                //startActivity(new Intent(XiafaShiyanJichuInfoActivity.this,XiafaShiyanJiChuInfoEndActivity.class));
                             }else{//CRC校验失败，接收失败，重新发送指令
                                 fasong(CrcUtil.fasong("4245471000000004000000000000"),"");
                             }
