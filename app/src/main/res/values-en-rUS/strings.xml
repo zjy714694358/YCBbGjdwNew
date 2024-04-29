@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="ExtraTranslation">
+    <string name="app_name">Ratio tester</string>
+    <string name="dakailanya" translatable="false">Turn on Bluetooth</string>
+    <string name="guanbilanya" translatable="false">Turn off Bluetooth</string>
+    <string name="duankailianjie" translatable="false">Disconnect</string>
+    <string name="sousuolanya" translatable="false">Search Bluetooth</string>
+    <string name="zhongying" translatable="false">Chinese/English</string>
+    <string name="tingzhisousuo" translatable="false">Stop search</string>
+    <string name="qingkaiqilanya" translatable="false">Please turn on Bluetooth</string>
+    <string name="weilianjie" translatable="false">unconnected</string>
+    <string name="yilianjie" translatable="false">Connected</string>
+    <string name="lianjiezhong" translatable="false">Connecting...</string>
+
+    <string name="lanyayikaiqi" translatable="false">Bluetooth enabled</string>
+    <string name="lanyadakaishibai" translatable="false">Bluetooth failed to turn on</string>
+
+    <string name="lianjieshibai" translatable="false">Connection failure</string>
+    <!--<string name="duankailianjie" translatable="false">断开连接</string>-->
+    <string name="lianjiezhongduan" translatable="false">Disconnection</string>
+    <string name="lianjielanya" translatable="false">Connect Bluetooth</string>
+</resources>

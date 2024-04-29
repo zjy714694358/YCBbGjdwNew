@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="ExtraTranslation">
+    <string name="app_name">变比测试仪</string>
+    <string name="dakailanya" translatable="false">打开蓝牙</string>
+    <string name="guanbilanya" translatable="false">关闭蓝牙</string>
+    <string name="duankailianjie" translatable="false">断开连接</string>
+    <string name="sousuolanya" translatable="false">搜索蓝牙</string>
+    <string name="zhongying" translatable="false">中/英</string>
+    <string name="tingzhisousuo" translatable="false">停止搜索</string>
+    <string name="qingkaiqilanya" translatable="false">请开启蓝牙</string>
+    <string name="weilianjie" translatable="false">未连接</string>
+    <string name="yilianjie" translatable="false">已连接</string>
+    <string name="lianjiezhong" translatable="false">连接中...</string>
+
+    <string name="lanyayikaiqi" translatable="false">蓝牙已开启</string>
+    <string name="lanyadakaishibai" translatable="false">蓝牙打开失败</string>
+
+    <string name="lianjieshibai" translatable="false">连接失败</string>
+    <!--<string name="duankailianjie" translatable="false">断开连接</string>-->
+    <string name="lianjiezhongduan" translatable="false">连接中断</string>
+    <string name="lianjielanya" translatable="false">连接蓝牙</string>
+
+</resources>
