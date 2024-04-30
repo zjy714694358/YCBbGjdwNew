@@ -269,7 +269,7 @@ public class XiafaShiyanJichuInfoActivity extends AppCompatActivity implements V
                                 String gfbbh4 = ShiOrShiliu.parseInt(guifanbanbenhao4)+"";
                                 String gfbbhAllStr = gfbbh1+"."+gfbbh2+"."+gfbbh3+"."+gfbbh4;
                                 String wenduStr = "";
-                                int shiduInt = 0;
+                                String shiduStr = "";
                                 String jingduStr = "";
                                 String weiduStr = "";
                                 String haibaStr = "";
@@ -277,7 +277,7 @@ public class XiafaShiyanJichuInfoActivity extends AppCompatActivity implements V
                                     wenduStr = ShiOrShiliu.hexToFloatSi(wendu);
                                 }
                                 if(StringUtils.isEquals("FF",shidu)!=true){
-                                    shiduInt = ShiOrShiliu.parseInt(shidu);
+                                    shiduStr = ShiOrShiliu.parseInt(shidu)+"";
                                 }
                                 if(StringUtils.isEquals("FFFFFFFFFFFFFFFF",jingdu)!=true){
                                     jingduStr = ShiOrShiliu.hexToFloatSi(jingdu);
@@ -289,7 +289,7 @@ public class XiafaShiyanJichuInfoActivity extends AppCompatActivity implements V
                                     haibaStr = ShiOrShiliu.hexToFloatSi(haiba);
                                 }
                                 String allStr = "仪器类型："+yqlxStr+",仪器厂家："+yqcjStr+",仪器型号："+yqxhStr+",仪器出厂编号："+yqccbhStr+"，规范版本号："+gfbbhAllStr
-                                        +",温度："+wenduStr+"℃,湿度："+shiduInt+"%,经度："+jingduStr+",纬度："+weiduStr+",海拔："+haibaStr+"m";
+                                        +",温度："+wenduStr+"℃,湿度："+shiduStr+"%,经度："+jingduStr+",纬度："+weiduStr+",海拔："+haibaStr+"m";
                                 Log.e(TAG,allStr);
                                 fasong(CrcUtil.fasong("4245471000000004000000000001"),"");
                                 Intent intent = new Intent(XiafaShiyanJichuInfoActivity.this,XiafaShiyanJiChuInfoEndActivity.class);
@@ -299,7 +299,7 @@ public class XiafaShiyanJichuInfoActivity extends AppCompatActivity implements V
                                 intent.putExtra("yqccbh",yqccbhStr);
                                 intent.putExtra("gfbbh",gfbbhAllStr);
                                 intent.putExtra("wendu",wenduStr);
-                                intent.putExtra("shidu",shiduInt);
+                                intent.putExtra("shidu",shiduStr);
                                 intent.putExtra("jingdu",jingduStr);
                                 intent.putExtra("weidu",weiduStr);
                                 intent.putExtra("haiba",haibaStr);
